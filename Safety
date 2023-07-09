@@ -1,0 +1,12 @@
+savety111 = game:GetService("CoreGui").Xeroxus
+function randomstring()
+		savetyleng = math.random(10,20)
+		savetyarray = {}
+		for i = 1,savetyleng do
+			   savetyarray[i] = string.char(math.random(32,126))
+		 end
+	return table.concat(savetyarray)
+end
+while task.wait(1.5) do
+    savety111.Name = randomstring()
+end
