@@ -7,9 +7,12 @@ function randomstring()
 		 end
 	return table.concat(savetyarray)
 end
-while task.wait(1.5) do
-    savety111.Name = randomstring()
+function randomstringloop()
+	while task.wait(1.5) do
+	    savety111.Name = randomstring()
+	end
 end
+randomstringloop()
 function DestroyUI() 
 	savety111:Destroy()
 end
