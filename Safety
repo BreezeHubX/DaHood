@@ -13,7 +13,7 @@ function randomstringloop()
 		print("Yes")
 	end
 end
-print("test")
+randomstringloop()
 function DestroyUI() 
 	savety111:Destroy()
 end
@@ -36,4 +36,4 @@ end)
 savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
 	DestroyUI() 
 end)
-randomstringloop()
+
