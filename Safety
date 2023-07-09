@@ -12,7 +12,6 @@ function randomstringloop()
 	    savety111.Name = randomstring()
 	end
 end
-
 function DestroyUI() 
 	savety111:Destroy()
 end
@@ -23,7 +22,6 @@ function Minimize()
 		MinimizeTween:Play()
 		savety111.TopConnection.MainUIFrame.Visible = false
 	else
-		MinimizeInfo = TweenInfo.new(2)
 		MinimizeTween = game:GetService("TweenService"):Create(savety111.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 340)})
 		MinimizeTween:Play()
 		savety111.TopConnection.MainUIFrame.Visible = true
@@ -33,7 +31,7 @@ savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
 	Minimize()
 end)
 savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
-DestroyUI()
+	DestroyUI()
 end)
 
 randomstringloop()
