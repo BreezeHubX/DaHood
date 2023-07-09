@@ -10,7 +10,6 @@ end
 function randomstringloop()
 	while task.wait(1.5) do
 	    savety111.Name = randomstring()
-		print("Yes")
 	end
 end
 randomstringloop()
@@ -30,10 +29,7 @@ function Minimize()
 		savety111.TopConnection.MainUIFrame.Visible = true
 	end
 end
-savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
-	Minimize()
-end)
-savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
-	DestroyUI() 
-end)
+savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(Minimize)
+
+savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(DestroyUI)
 
