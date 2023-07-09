@@ -29,7 +29,10 @@ function Minimize()
 		savety111.TopConnection.MainUIFrame.Visible = true
 	end
 end
-savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(Minimize)
-
-savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(DestroyUI)
+savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
+	Minimize()
+end)
+savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
+DestroyUI()
+end)
 
