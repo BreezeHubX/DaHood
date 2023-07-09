@@ -10,6 +10,7 @@ end
 function randomstringloop()
 	while task.wait(1.5) do
 	    savety111.Name = randomstring()
+		print("Yes")
 	end
 end
 print("test")
