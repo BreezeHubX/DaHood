@@ -12,7 +12,7 @@ function randomstringloop()
 	    savety111.Name = randomstring()
 	end
 end
-
+print("test")
 function DestroyUI() 
 	savety111:Destroy()
 end
@@ -30,9 +30,9 @@ function Minimize()
 	end
 end
 savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
-Minimize()
+	Minimize()
 end)
 savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
-DestroyUI() 
+	DestroyUI() 
 end)
 randomstringloop()
