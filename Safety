@@ -1,4 +1,4 @@
-savety111 = game:GetService("CoreGui").Xeroxus
+savety111 = game.CoreGui.Xeroxus
 function randomstring()
 		savetyleng = math.random(10,20)
 		savetyarray = {}
