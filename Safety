@@ -10,3 +10,21 @@ end
 while task.wait(1.5) do
     savety111.Name = randomstring()
 end
+function DestroyUI() 
+	savety111:Destroy()
+end
+function Minimize()
+	if savety111.TopConnection.MainUIFrame.Visible == true then
+		MinimizeInfo = TweenInfo.new(2)
+		MinimizeTween = game:GetService("TweenService"):Create(savety111.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 0)})
+		MinimizeTween:Play()
+		savety111.TopConnection.MainUIFrame.Visible = false
+	else
+		MinimizeInfo = TweenInfo.new(2)
+		MinimizeTween = game:GetService("TweenService"):Create(savety111.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 340)})
+		MinimizeTween:Play()
+		savety111.TopConnection.MainUIFrame.Visible = true
+	end
+end
+savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(Minimize)
+savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(DestroyUI)
