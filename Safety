@@ -1,4 +1,3 @@
-savety111 = game.CoreGui.Xeroxus
 function DestroyUI() 
 	savety111:Destroy()
 end
@@ -14,10 +13,10 @@ function Minimize()
 		savety111.TopConnection.MainUIFrame.Visible = true
 	end
 end
-savety111.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
+game:GetService("CoreGui").Xeroxus.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
 	Minimize()
 end)
-savety111.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
+game:GetService("CoreGui").Xeroxus.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
 	DestroyUI()
 end)
 randomstringloop()
