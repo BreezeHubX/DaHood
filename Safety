@@ -1,3 +1,6 @@
+repeat task.wait()
+until
+game:IsLoaded()
 function DestroyUI() 
 	savety111:Destroy()
 end
@@ -13,6 +16,7 @@ function Minimize()
 		game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible = true
 	end
 end
+
 game:GetService("CoreGui").Xeroxus.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
 	Minimize()
 end)
