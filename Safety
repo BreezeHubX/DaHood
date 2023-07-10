@@ -2,25 +2,3 @@ repeat task.wait()
 until
 game:IsLoaded()
 task.wait(.2)
-function DestroyUI() 
-	savety111:Destroy()
-end
-function Minimize()
-	MinimizeTween:Play()
-	if game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible == true then
-		MinimizeInfo = TweenInfo.new(2)
-		MinimizeTween = game:GetService("TweenService"):Create(game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 340)})
-		game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible = false
-	else
-		MinimizeTween = game:GetService("TweenService"):Create(game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 0)})
-		game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible = true
-	end
-end
-print("test")
-game:GetService("CoreGui").Xeroxus.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
-	Minimize()
-end)
-game:GetService("CoreGui").Xeroxus.TopConnection.Text.Destroy.MouseButton1Click:Connect(function()
-	DestroyUI()
-end)
-randomstringloop()
