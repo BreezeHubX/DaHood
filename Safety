@@ -4,7 +4,7 @@ end
 function Minimize()
 	if game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible == true then
 		MinimizeInfo = TweenInfo.new(2)
-		MinimizeTween = game:GetService("TweenService"):Create(game:GetService("CoreGui").Xeroxus..TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 0)})
+		MinimizeTween = game:GetService("TweenService"):Create(game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame,MinimizeInfo,{Size = UDim2.new(0, 580,0.0, 0)})
 		MinimizeTween:Play()
 		game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible = false
 	else
