@@ -16,7 +16,7 @@ function Minimize()
 		game:GetService("CoreGui").Xeroxus.TopConnection.MainUIFrame.Visible = true
 	end
 end
-
+print("test")
 game:GetService("CoreGui").Xeroxus.TopConnection.Text.Minimize.MouseButton1Click:Connect(function()
 	Minimize()
 end)
