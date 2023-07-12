@@ -1,4 +1,4 @@
-if getgenv().XeroxusLoaded == true then
+if XeroxusLoaded ~= nil then
 	error("script already Loaded")
 end
 repeat
