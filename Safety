@@ -1,4 +1,15 @@
+if getgenv().XeroxusLoaded == true then
+	error("script already Loaded")
+end
 repeat
 	task.wait()
 until
 game:IsLoaded()
+if not game.Players.LocalPlayer.CharacterAppearanceLoaded then
+	game.Players.LocalPlayer.CharacterAdded:Wait(.5)
+end
+ScriptLoadCheck = true
+if ScriptLoadCheck then
+	warn"AllSet"
+	getgenv().XeroxusLoaded = true
+end
