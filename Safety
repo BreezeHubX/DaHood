@@ -5,8 +5,8 @@ repeat
 	task.wait()
 until
 game:IsLoaded()
-if not game.Players.LocalPlayer.CharacterAppearanceLoaded then
-	game.Players.LocalPlayer.CharacterAdded:Wait(.5)
+if not game:GetService("Players").LocalPlayer.CharacterAppearanceLoaded then
+	game:GetService("Players").LocalPlayer.CharacterAdded:Wait(.5)
 end
 ScriptLoadCheck = true
 if ScriptLoadCheck then
