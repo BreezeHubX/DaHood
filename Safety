@@ -14,17 +14,19 @@ if ScriptLoadCheck then
 	getgenv().XeroxusLoaded = true
 end
 
+--script
+
 function Savety()
 	savetyXero = game:GetService("CoreGui"):FindFirstChild("Xeroxus")
 	if savetyXero then
-		while task.wait(.314)
-			savetyXero.Name = string.char(math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93)..math.random(65,93))
+		while task.wait(.314) do
+			savetyXero.Name = (string.char(math.random(65, 95)))..(string.char(math.random(65, 95)))..(string.char(math.random(65, 95))).."Xero"..(string.char(math.random(65, 95)))..(string.char(math.random(65, 95)))..(string.char(math.random(65, 95))).."xus"..(string.char(math.random(65, 95)))..(string.char(math.random(65, 95)))..(string.char(math.random(65, 95)))
 		end
 	else
 		game:GetService("Players").LocalPlayer:Kick("Error 404")
 	end
 end
-
+Savety()
 
 
 
